@@ -41,8 +41,7 @@
 
 <hr/>
 
-
-<H3>4. BITUK 프로젝트 실행 시 주의사항 </H4>
+<H3>4. BITUK 프로젝트 실행 시 주의사항 </H3>
 
 
 1. 반드시 해당 프로그램 4개는 한 디렉토리 안에 설치해야 합니다. (data.csv, BITUK2.png, main.ui, main.py) (시각적으로 좋은 화면을 보고 싶다면 폰트까지 설치해야됨)
@@ -51,11 +50,20 @@
 4. 비밀번호가 같은 계정 생성 시 다른 계정이 열람될 수 있습니다.
 5. 매도/매수 기능이 실제로 저장되지 않습니다.
 6. 콤보 박스가 제공하는 기능은 실제로 작동하지 않습니다.
-  
 
 
+<hr/>
+
+<H3>5. BITUK 프로젝트 제작 참고 사이트 </H3>
 
 
+**파이썬을 이용한 비트코인 자동매매 (개정판)** : <https://wikidocs.net/book/1665>
+**PyQt를 이용한 파이썬 GUI 프로그래밍** : <https://wikidocs.net/book/1664>
+**초보자를 위한 Python GUI 프로그래밍 - PyQt5** : <https://wikidocs.net/book/2944>
+**PyQt5 Tutorial - 파이썬으로 만드는 나만의 GUI 프로그램** : <https://wikidocs.net/book/2165>
+**[Python 완전정복 시리즈] 3편 : PyQt 완전정복** : <https://wikidocs.net/book/7187>
+
+<hr/>
 
 
 
