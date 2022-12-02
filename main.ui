@@ -1,0 +1,762 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1213</width>
+    <height>831</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>BITUK</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>:/icon/BITUK2.png</normaloff>:/icon/BITUK2.png</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color:rgb(214,230,245);
+border-radius: 100px;</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>280</x>
+      <y>20</y>
+      <width>691</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>210 수퍼사이즈 Black italic</family>
+      <pointsize>20</pointsize>
+      <weight>50</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:rgb(255, 255, 255);
+font: 20pt &quot;210 수퍼사이즈 Black italic&quot;;</string>
+    </property>
+    <property name="text">
+     <string>BITUK : 모의 가상화폐 투자 프로그램</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="hello">
+    <property name="geometry">
+     <rect>
+      <x>400</x>
+      <y>110</y>
+      <width>461</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>나눔바른고딕OTF</family>
+      <pointsize>16</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string>TextLabel</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="combo">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>180</y>
+      <width>181</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 25 12pt &quot;KoPubWorld돋움체 Light&quot;;
+background-color:rgb(255, 255, 255);</string>
+    </property>
+    <item>
+     <property name="text">
+      <string>비트코인</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>리플</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>ADA</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>도지코인</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>이더리움</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QPushButton" name="output">
+    <property name="geometry">
+     <rect>
+      <x>350</x>
+      <y>180</y>
+      <width>101</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>메이플스토리</family>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:rgb(0, 170, 255);
+color:white</string>
+    </property>
+    <property name="text">
+     <string>차트 출력</string>
+    </property>
+   </widget>
+   <widget class="QWidget" name="horizontalLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>350</y>
+      <width>440</width>
+      <height>323</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <layout class="QGridLayout" name="gridLayout">
+       <item row="3" column="0" rowspan="5">
+        <widget class="QLabel" name="get_coin">
+         <property name="font">
+          <font>
+           <family>나눔바른고딕OTF</family>
+           <pointsize>12</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color:rgb(255, 255, 255);
+color: rgb(0, 0, 0); border-style: solid; border-width: 2px; border-color: rgb(0, 0, 0); border-radius: 0px;</string>
+         </property>
+         <property name="text">
+          <string>보유 종목</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="2">
+        <widget class="QLabel" name="ripple">
+         <property name="font">
+          <font>
+           <family>Segoe UI</family>
+           <pointsize>12</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color:rgb(255, 255, 255);
+color: rgb(0, 0, 0); border-style: solid; border-width: 2px; border-color: rgb(85, 85, 255); </string>
+         </property>
+         <property name="text">
+          <string>ripple count</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="6" column="1">
+        <widget class="QLabel" name="label_19">
+         <property name="font">
+          <font>
+           <family>나눔바른고딕OTF</family>
+           <pointsize>12</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color:rgb(255, 255, 255);
+color: rgb(0, 0, 0); border-style: solid; border-width: 2px; border-color: rgb(0, 0, 0); </string>
+         </property>
+         <property name="text">
+          <string>도지코인</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="2" alignment="Qt::AlignVCenter">
+        <widget class="QLabel" name="bitcoin">
+         <property name="font">
+          <font>
+           <family>Segoe UI</family>
+           <pointsize>12</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color:rgb(255, 255, 255);
+color: rgb(0, 0, 0); border-style: solid; border-width: 2px; border-color: rgb(85, 85, 255); </string>
+         </property>
+         <property name="text">
+          <string>bitcoin count</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="5" column="1">
+        <widget class="QLabel" name="label_15">
+         <property name="font">
+          <font>
+           <family>나눔바른고딕OTF</family>
+           <pointsize>12</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color:rgb(255, 255, 255);
+color: rgb(0, 0, 0); border-style: solid; border-width: 2px; border-color: rgb(0, 0, 0); </string>
+         </property>
+         <property name="text">
+          <string>ADA</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="5" column="2">
+        <widget class="QLabel" name="ada">
+         <property name="font">
+          <font>
+           <family>Segoe UI</family>
+           <pointsize>12</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color:rgb(255, 255, 255);
+color: rgb(0, 0, 0); border-style: solid; border-width: 2px; border-color: rgb(85, 85, 255); </string>
+         </property>
+         <property name="text">
+          <string>ada count</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="7" column="1">
+        <widget class="QLabel" name="label_17">
+         <property name="font">
+          <font>
+           <family>나눔바른고딕OTF</family>
+           <pointsize>12</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color:rgb(255, 255, 255);
+color: rgb(0, 0, 0); border-style: solid; border-width: 2px; border-color: rgb(0, 0, 0); </string>
+         </property>
+         <property name="text">
+          <string>이더리움</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="7" column="2">
+        <widget class="QLabel" name="eth">
+         <property name="font">
+          <font>
+           <family>Segoe UI</family>
+           <pointsize>12</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color:rgb(255, 255, 255);
+color: rgb(0, 0, 0); border-style: solid; border-width: 2px; border-color: rgb(85, 85, 255); </string>
+         </property>
+         <property name="text">
+          <string>eth count</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="1">
+        <widget class="QLabel" name="label_14">
+         <property name="font">
+          <font>
+           <family>나눔바른고딕OTF</family>
+           <pointsize>12</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color:rgb(255, 255, 255);
+color: rgb(0, 0, 0); border-style: solid; border-width: 2px; border-color: rgb(0, 0, 0); </string>
+         </property>
+         <property name="text">
+          <string>리플</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="1">
+        <widget class="QLabel" name="label_11">
+         <property name="font">
+          <font>
+           <family>나눔바른고딕OTF</family>
+           <pointsize>12</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color:rgb(255, 255, 255);
+color: rgb(0, 0, 0); border-style: solid; border-width: 2px; border-color: rgb(0, 0, 0); </string>
+         </property>
+         <property name="text">
+          <string>비트코인</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="1">
+        <widget class="QLabel" name="user_money">
+         <property name="font">
+          <font>
+           <family>Segoe UI</family>
+           <pointsize>12</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color:rgb(255, 255, 255);
+color: rgb(0, 0, 0); border-style: solid; border-width: 2px; border-color: rgb(85, 85, 255); </string>
+         </property>
+         <property name="text">
+          <string>  input User_money</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="0" rowspan="2">
+        <widget class="QLabel" name="get_coin_2">
+         <property name="font">
+          <font>
+           <family>나눔바른고딕OTF</family>
+           <pointsize>12</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color:rgb(255, 255, 255);
+color: rgb(0, 0, 0); border-style: solid; border-width: 2px; border-color: rgb(0, 0, 0); border-radius: 0px;</string>
+         </property>
+         <property name="text">
+          <string>사용자 정보</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QLabel" name="user_name">
+         <property name="font">
+          <font>
+           <family>Segoe UI</family>
+           <pointsize>12</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color:rgb(255, 255, 255);
+color: rgb(0, 0, 0); border-style: solid; border-width: 2px; border-color: rgb(85, 85, 255); </string>
+         </property>
+         <property name="text">
+          <string>  input User_name</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="6" column="2">
+        <widget class="QLabel" name="doggie">
+         <property name="font">
+          <font>
+           <family>Segoe UI</family>
+           <pointsize>12</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color:rgb(255, 255, 255);
+color: rgb(0, 0, 0); border-style: solid; border-width: 2px; border-color: rgb(85, 85, 255); </string>
+         </property>
+         <property name="text">
+          <string>doggie count</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QSpinBox" name="buy_count">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>690</y>
+      <width>111</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>굴림</family>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:rgb(255,255,255);</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>690</y>
+      <width>101</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>KoPubWorld돋움체 Light</family>
+      <pointsize>12</pointsize>
+      <weight>3</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 25 12pt &quot;KoPubWorld돋움체 Light&quot;;
+background-color:rgb(255, 255, 255);
+
+color: rgb(0, 0, 0); border-style: solid; border-width: 2px; border-color: rgb(0, 0, 0); border-radius: 0px;</string>
+    </property>
+    <property name="text">
+     <string>종목 개수</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="buy">
+    <property name="geometry">
+     <rect>
+      <x>360</x>
+      <y>690</y>
+      <width>101</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>메이플스토리</family>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:rgb(15, 202, 127);
+color:white;</string>
+    </property>
+    <property name="text">
+     <string>매수</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="sell">
+    <property name="geometry">
+     <rect>
+      <x>890</x>
+      <y>690</y>
+      <width>101</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>메이플스토리</family>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:rgb(246, 69, 92);
+color:white;</string>
+    </property>
+    <property name="text">
+     <string>매도</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="buy_price">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>740</y>
+      <width>181</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:rgb(255,255,255);</string>
+    </property>
+    <property name="text">
+     <string>TextLabel</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>740</y>
+      <width>101</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>KoPubWorld돋움체 Light</family>
+      <pointsize>12</pointsize>
+      <weight>3</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 25 12pt &quot;KoPubWorld돋움체 Light&quot;;
+background-color:rgb(255, 255, 255);
+color: rgb(0, 0, 0); border-style: solid; border-width: 2px; border-color: rgb(0, 0, 0); border-radius: 0px;</string>
+    </property>
+    <property name="text">
+     <string>종목 가격</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>550</x>
+      <y>740</y>
+      <width>101</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>KoPubWorld돋움체 Light</family>
+      <pointsize>12</pointsize>
+      <weight>3</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 25 12pt &quot;KoPubWorld돋움체 Light&quot;;
+background-color:rgb(255, 255, 255);
+color: rgb(0, 0, 0); border-style: solid; border-width: 2px; border-color: rgb(0, 0, 0); border-radius: 0px;</string>
+    </property>
+    <property name="text">
+     <string>종목 가격</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="sell_price">
+    <property name="geometry">
+     <rect>
+      <x>680</x>
+      <y>740</y>
+      <width>181</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:rgb(255,255,255);</string>
+    </property>
+    <property name="text">
+     <string>TextLabel</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_5">
+    <property name="geometry">
+     <rect>
+      <x>550</x>
+      <y>690</y>
+      <width>101</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>KoPubWorld돋움체 Light</family>
+      <pointsize>12</pointsize>
+      <weight>3</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 25 12pt &quot;KoPubWorld돋움체 Light&quot;;
+background-color:rgb(255, 255, 255);
+color: rgb(0, 0, 0); border-style: solid; border-width: 2px; border-color: rgb(0, 0, 0); border-radius: 0px;</string>
+    </property>
+    <property name="text">
+     <string>종목 개수</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QSpinBox" name="sell_count">
+    <property name="geometry">
+     <rect>
+      <x>680</x>
+      <y>690</y>
+      <width>111</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>굴림</family>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:rgb(255,255,255);</string>
+    </property>
+   </widget>
+   <widget class="QWidget" name="gridLayoutWidget_3">
+    <property name="geometry">
+     <rect>
+      <x>550</x>
+      <y>550</y>
+      <width>341</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <layout class="QGridLayout" name="gridLayout_4">
+     <item row="0" column="0">
+      <widget class="QLabel" name="label_6">
+       <property name="font">
+        <font>
+         <family>KoPub돋움체 Light</family>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color:rgb(255,255,255);
+color: rgb(0, 0, 0); border-style: solid; border-width: 2px; border-color: rgb(0, 0, 0); border-radius: 0px;</string>
+       </property>
+       <property name="text">
+        <string>현재 가격</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1" colspan="2">
+      <widget class="QLabel" name="now_cur">
+       <property name="font">
+        <font>
+         <family>KoPub돋움체 Light</family>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color:rgb(255,255,255);</string>
+       </property>
+       <property name="text">
+        <string>TextLabel</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QPushButton" name="refresh">
+    <property name="geometry">
+     <rect>
+      <x>350</x>
+      <y>260</y>
+      <width>101</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>메이플스토리</family>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:rgb(255, 0, 127);
+color:white</string>
+    </property>
+    <property name="text">
+     <string>새로고침</string>
+    </property>
+   </widget>
+   <widget class="QWidget" name="gridLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>510</x>
+      <y>180</y>
+      <width>611</width>
+      <height>331</height>
+     </rect>
+    </property>
+    <layout class="QGridLayout" name="gridLayout_Bit"/>
+   </widget>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
